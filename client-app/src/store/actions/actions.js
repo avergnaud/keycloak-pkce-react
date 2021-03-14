@@ -1,0 +1,4 @@
+export const GEN_PKCE_STATE = 'GEN_PKCE_STATE';
+export const GEN_CODE_VERIFIER = 'GEN_CODE_VERIFIER';
+export const GEN_CODE_CHALLENGE = 'GEN_CODE_CHALLENGE';
+export const SET_AUTH_CODE = 'SET_AUTH_CODE';
