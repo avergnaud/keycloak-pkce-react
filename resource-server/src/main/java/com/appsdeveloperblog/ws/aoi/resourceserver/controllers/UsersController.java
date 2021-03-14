@@ -8,15 +8,15 @@ import java.util.Collections;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/protected-resources")
 public class UsersController {
 
     @Autowired
     Environment env;
 
-    @GetMapping("/status/check")
+    @GetMapping("/")
     public Map status() {
 
-        return Collections.singletonMap("response", "protected value");
+        return Collections.singletonMap("response", "protected resources !");
     }
 }

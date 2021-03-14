@@ -22,7 +22,7 @@ function AuthorizationCode(props) {
         authorizationUrl += "&state=" + pkceState;
         authorizationUrl += "&code_challenge=" + codeChallenge;
         authorizationUrl += "&code_challenge_method=S256";
-        window.open(authorizationUrl, 'authorizationRequestWindow', 'width=800,height=600,left=200,top=200');
+        window.open(authorizationUrl, 'authorizationRequestWindow', 'width=500,height=500,left=50,top=50');
     }
 
     return (
@@ -30,7 +30,7 @@ function AuthorizationCode(props) {
             <div>
                 <span className="libelle">
                     <button onClick={() => getAuthCode(props.pkceState, props.codeChallenge)}>
-                        Get authorization code
+                        Connect with Keycloak
                     </button>
                 </span>
                 <span className="val">
