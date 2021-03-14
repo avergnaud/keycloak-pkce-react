@@ -46,8 +46,9 @@
   width: 65vw;
   text-align: left;
   display: inline-block;
-  height: calc(10px + 1vmin);
+  height: calc(14px + 1vmin);
   vertical-align: middle;
+  overflow: hidden;
 }
 
 @keyframes App-logo-spin {

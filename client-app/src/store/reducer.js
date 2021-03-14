@@ -3,10 +3,12 @@ import * as actionTypes from './actions/actions';
 
 const initialState = {
     pkceState: "",
+    returnedPkceState: "",
     codeVerifier: "",
     codeChallenge: "",
     authorizationCode: "",
-    accessToken: ""
+    accessToken: "",
+    resource: ""
 };
 
 const reducer = (state = initialState, action) => {
@@ -30,6 +32,21 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 authorizationCode: action.value
+            }
+        case actionTypes.SET_RETURNED_STATE:
+            return {
+                ...state,
+                returnedState: action.value
+            }
+        case actionTypes.SET_ACCESS_TOKEN:
+            return {
+                ...state,
+                accessToken: action.value
+            }
+        case actionTypes.SET_RESOURCE:
+            return {
+                ...state,
+                resource: action.value
             }
         default:
             return state

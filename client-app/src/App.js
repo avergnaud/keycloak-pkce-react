@@ -1,12 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CALLBACK_PATH } from './constants';
 import logo from './logo.svg';
 import './App.css';
-
-import AuthCode from './callback/AuthCode';
+import Callback from './callback/Callback';
 import PKCE from './containers/PKCE';
-
-const CALLBACK_PATH = '/login/callback';
 
 function App() {
 
@@ -18,7 +16,7 @@ function App() {
         </header>
         <div className="App-body">
           <Switch>
-            <Route path={CALLBACK_PATH} component={AuthCode} />
+            <Route path={CALLBACK_PATH} component={Callback} />
             <Route path="/" component={PKCE} />
           </Switch>
         </div>

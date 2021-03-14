@@ -2,7 +2,9 @@ import React from 'react';
 import PKCEState from '../components/PKCEState';
 import PKCECodeVerifier from '../components/PKCECodeVerifier';
 import PKCECodeChallenge from '../components/PKCECodeChallenge';
-import GetAuthCode from '../components/GetAuthCode';
+import AuthorizationCode from '../components/AuthorizationCode';
+import AccessToken from '../components/AccessToken';
+import Resource from '../components/Resource';
 
 function PKCE() {
     return (
@@ -10,7 +12,9 @@ function PKCE() {
             <PKCEState></PKCEState>
             <PKCECodeVerifier></PKCECodeVerifier>
             <PKCECodeChallenge></PKCECodeChallenge>
-            <GetAuthCode></GetAuthCode>
+            <AuthorizationCode></AuthorizationCode>
+            <AccessToken></AccessToken>
+            <Resource></Resource>
         </React.Fragment>
     );
 }

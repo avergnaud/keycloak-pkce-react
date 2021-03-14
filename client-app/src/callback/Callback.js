@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 executes outside of main SPA bundle!
 should be a stateless volatile component
 */
-function AuthCode(props) {
+function Callback(props) {
 
     /* componentDidMount */
     useEffect(() => {
@@ -24,8 +24,9 @@ function AuthCode(props) {
     return (
         <div>
             <h1>Callback route !</h1>
+            <h3 style={{ marginLeft: "5vw" }}>Waiting 3s for demonstration purposes</h3>
         </div>
     );
 }
 
-export default AuthCode;
+export default Callback;
