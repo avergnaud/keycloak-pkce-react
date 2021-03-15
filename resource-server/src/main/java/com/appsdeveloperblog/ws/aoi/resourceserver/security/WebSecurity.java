@@ -34,7 +34,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .authorizeRequests((requests) -> {
                     ((ExpressionUrlAuthorizationConfigurer.AuthorizedUrl) requests
                             .antMatchers(HttpMethod.GET, "/users/status/check")
-                            .hasAuthority("SCOPE_profile")
+                            //.hasAuthority("SCOPE_profile")
+                            .hasAuthority("SCOPE_contacts")
                             //.hasRole("developer")
                             //.hasAuthority("ROLE_developer")
                             .anyRequest()).authenticated();

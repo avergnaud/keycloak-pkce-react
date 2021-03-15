@@ -17,7 +17,7 @@ function AuthorizationCode(props) {
         let authorizationUrl = OIC_ENDPOINT + "/auth";
         authorizationUrl += "?client_id=meetup-app-pkce-client";
         authorizationUrl += "&response_type=code";
-        authorizationUrl += "&scope=openid profile";
+        authorizationUrl += "&scope=openid profile contacts";
         authorizationUrl += "&redirect_uri=" + ROOT_URL + CALLBACK_PATH;
         authorizationUrl += "&state=" + pkceState;
         authorizationUrl += "&code_challenge=" + codeChallenge;
