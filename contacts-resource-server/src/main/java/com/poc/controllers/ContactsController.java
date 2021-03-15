@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.ws.aoi.resourceserver.controllers;
+package com.poc.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -8,8 +8,8 @@ import java.util.Collections;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/protected-resources")
-public class UsersController {
+@RequestMapping("/contacts")
+public class ContactsController {
 
     @Autowired
     Environment env;
@@ -17,6 +17,6 @@ public class UsersController {
     @GetMapping("/")
     public Map status() {
 
-        return Collections.singletonMap("response", "protected resources !");
+        return Collections.singletonMap("response", "protected contacts resource !");
     }
 }

@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.ws.aoi.resourceserver.security;
+package com.poc.security;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.security.core.GrantedAuthority;

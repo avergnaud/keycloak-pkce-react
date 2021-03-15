@@ -40,7 +40,7 @@ const mapDispatchToProps = dispatch => ({
             mode: 'cors'
         };
 
-        fetch('http://localhost:8090/protected-resources/', init)
+        fetch('http://localhost:8090/contacts/', init)
             .then(response => response.json())
             .then(json => {
                 //console.log(json)

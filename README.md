@@ -23,7 +23,7 @@ Révocation des consentements OAuth :
 
 ![screenshot](./keycloak-users-revoke-consent.png?raw=true)
 
-resource-server :
+contacts-resource-server :
 ```
 ./run.sh
 ```

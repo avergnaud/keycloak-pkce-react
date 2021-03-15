@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.ws.aoi.resourceserver.security;
+package com.poc.security;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
