@@ -12,6 +12,10 @@ docker container run --name=keycloak-simple -v keycloak-simple_db:/opt/jboss/key
 
 ![screenshot](./keycloak-meetup-app-pkce-client.png?raw=true)
 
+Client scopes (includes *contacts*)
+
+![scopes](./keycloak-client-scopes.png?raw=true)
+
 ## run
 
 ```
