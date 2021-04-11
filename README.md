@@ -1,6 +1,14 @@
 # Flow
 
+## Flow authorization code classique
+
 ![flow](./flow_oidc.png?raw=true)
+
+## Flow PKCE enhanced authorization code
+
+[https://auth0.com/docs/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce#how-it-works](https://auth0.com/docs/flows/authorization-code-flow-with-proof-key-for-code-exchange-pkce#how-it-works)
+
+![auth-sequence-auth-code-pkce](./auth-sequence-auth-code-pkce.png?raw=true)
 
 # install
 
