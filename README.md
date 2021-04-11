@@ -1,6 +1,6 @@
 # Flow
 
-![flow](./flow.png?raw=true)
+![flow](./flow_oidc.png?raw=true)
 
 # install
 
